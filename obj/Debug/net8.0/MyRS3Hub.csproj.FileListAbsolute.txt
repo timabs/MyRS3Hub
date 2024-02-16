@@ -24,3 +24,6 @@ E:\Documents\1Programs\MyRS3Hub\MyRS3Hub\obj\Debug\net8.0\refint\MyRS3Hub.dll
 E:\Documents\1Programs\MyRS3Hub\MyRS3Hub\obj\Debug\net8.0\MyRS3Hub.pdb
 E:\Documents\1Programs\MyRS3Hub\MyRS3Hub\obj\Debug\net8.0\MyRS3Hub.genruntimeconfig.cache
 E:\Documents\1Programs\MyRS3Hub\MyRS3Hub\obj\Debug\net8.0\ref\MyRS3Hub.dll
+E:\Documents\1Programs\MyRS3Hub\MyRS3Hub\bin\Debug\net8.0\package-lock.json
+E:\Documents\1Programs\MyRS3Hub\MyRS3Hub\bin\Debug\net8.0\package.json
+E:\Documents\1Programs\MyRS3Hub\MyRS3Hub\obj\Debug\net8.0\MyRS3Hub.sourcelink.json

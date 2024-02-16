@@ -1,8 +1,55 @@
 ﻿@page "/"
-
+@using System.Text.Json
+@using System.Text.Json.Serialization
+@inject IHttpClientFactory ClientFactory
+@inject IJSRuntime JSRuntime
 <PageTitle>Home</PageTitle>
 
-<h1>Hello, world!</h1>
+<h1 class="text-center text-5xl p-4">RS3Hub</h1>
+<div class="flex flex-col place-items-center">
+    <form class="flex flex-col place-items-center w-fit gap-4" @onsubmit="GetProfile" @onsubmit:preventDefault><label for="rs-name">RuneScape 3 Username:</label>
+<input type="text" class="center w-64 outline ml-4" id="rs-name" title="rs-name" placeholder="Enter a RuneScape 3 username" @bind="userName"/>
+<button type="submit" class="w-fit border-dashed border-2 border-black px-2 py-1">Submit</button></form>
+</div>
+<div class="p-8">
+     @if (profileData != null)
+    {
+        <p>@profileData.Name</p>
+        <p>@profileData.TotalXp</p>
+        <p>@profileData.CombatLevel</p>
+        
+    }
+    else
+    {
+        <text>No profile data available.</text>
+    }
+</div>
 
-Welcome to your new app.
+@code {
+    private string? userName;
+    private ProfileData? profileData;
+    private class ProfileData 
+    {
+        [JsonPropertyName("name")]
+        public string? Name {get;set;}
+         [JsonPropertyName("totalxp")]
+         public long? TotalXp { get; set; }
+         [JsonPropertyName("combatlevel")]
+         public int? CombatLevel { get; set; }
+    }
+    private async Task GetProfile()
+     {
+        var request = new HttpRequestMessage(HttpMethod.Get, $"https://apps.runescape.com/runemetrics/profile/profile?user={userName}&activities=20" );
+        var client = ClientFactory.CreateClient();
 
+        var response = await client.SendAsync(request);
+        if (response.IsSuccessStatusCode)
+        {
+            var jsonResponse = await response.Content.ReadAsStringAsync();
+            profileData = System.Text.Json.JsonSerializer.Deserialize<ProfileData>(jsonResponse);
+        }
+        else{
+            Console.Write("Error fetching profile");
+        }
+     }
+}

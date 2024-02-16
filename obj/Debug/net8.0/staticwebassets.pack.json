@@ -1,20 +1,16 @@
 {
   "Files": [
     {
-      "Id": "E:\\Documents\\1Programs\\MyRS3Hub\\MyRS3Hub\\wwwroot\\bootstrap\\bootstrap.min.css",
-      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
-    },
-    {
-      "Id": "E:\\Documents\\1Programs\\MyRS3Hub\\MyRS3Hub\\wwwroot\\bootstrap\\bootstrap.min.css.map",
-      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
-    },
-    {
       "Id": "E:\\Documents\\1Programs\\MyRS3Hub\\MyRS3Hub\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
       "Id": "E:\\Documents\\1Programs\\MyRS3Hub\\MyRS3Hub\\wwwroot\\site.css",
       "PackagePath": "staticwebassets\\site.css"
+    },
+    {
+      "Id": "E:\\Documents\\1Programs\\MyRS3Hub\\MyRS3Hub\\wwwroot\\tailwind.css",
+      "PackagePath": "staticwebassets\\tailwind.css"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.MyRS3Hub.Microsoft.AspNetCore.StaticWebAssets.props",

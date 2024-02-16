@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "QZkG4NQI2EhQWoSNFG4FQ1+t1nkF3rJiiT1PXgLKjz8=",
+  "Hash": "ta67dSnDEtYaZStmcX/unTDNy0oWZZcwMLP5FvNKrAo=",
   "Source": "MyRS3Hub",
   "BasePath": "_content/MyRS3Hub",
   "Mode": "Default",
@@ -16,44 +16,6 @@
     }
   ],
   "Assets": [
-    {
-      "Identity": "E:\\Documents\\1Programs\\MyRS3Hub\\MyRS3Hub\\wwwroot\\bootstrap\\bootstrap.min.css",
-      "SourceId": "MyRS3Hub",
-      "SourceType": "Discovered",
-      "ContentRoot": "E:\\Documents\\1Programs\\MyRS3Hub\\MyRS3Hub\\wwwroot\\",
-      "BasePath": "_content/MyRS3Hub",
-      "RelativePath": "bootstrap/bootstrap.min.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css"
-    },
-    {
-      "Identity": "E:\\Documents\\1Programs\\MyRS3Hub\\MyRS3Hub\\wwwroot\\bootstrap\\bootstrap.min.css.map",
-      "SourceId": "MyRS3Hub",
-      "SourceType": "Discovered",
-      "ContentRoot": "E:\\Documents\\1Programs\\MyRS3Hub\\MyRS3Hub\\wwwroot\\",
-      "BasePath": "_content/MyRS3Hub",
-      "RelativePath": "bootstrap/bootstrap.min.css.map",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css.map"
-    },
     {
       "Identity": "E:\\Documents\\1Programs\\MyRS3Hub\\MyRS3Hub\\wwwroot\\favicon.png",
       "SourceId": "MyRS3Hub",
@@ -91,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\site.css"
+    },
+    {
+      "Identity": "E:\\Documents\\1Programs\\MyRS3Hub\\MyRS3Hub\\wwwroot\\tailwind.css",
+      "SourceId": "MyRS3Hub",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Documents\\1Programs\\MyRS3Hub\\MyRS3Hub\\wwwroot\\",
+      "BasePath": "_content/MyRS3Hub",
+      "RelativePath": "tailwind.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\tailwind.css"
     }
   ]
 }
