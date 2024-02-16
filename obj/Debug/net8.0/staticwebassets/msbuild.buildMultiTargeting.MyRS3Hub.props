@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\MyRS3Hub.props" />
+</Project>
