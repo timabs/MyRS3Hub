@@ -1,0 +1,45 @@
+@using System.Text.Json
+@using System.Text.Json.Serialization
+@inject IHttpClientFactory ClientFactory
+@inject IJSRuntime JSRuntime
+
+ @if (profileData != null)
+    {
+        <p>@profileData.Name</p>
+        <p>@profileData.TotalXp</p>
+        <p>@profileData.CombatLevel</p>
+        
+    }
+    else
+    {
+        <text>No profile data available.</text>
+    }
+
+    @code {
+    private string? userName;
+    private ProfileData? profileData;
+    private class ProfileData 
+    {
+        [JsonPropertyName("name")]
+        public string? Name {get;set;}
+         [JsonPropertyName("totalxp")]
+         public long? TotalXp { get; set; }
+         [JsonPropertyName("combatlevel")]
+         public int? CombatLevel { get; set; }
+    }
+    private async Task GetProfile()
+     {
+        var request = new HttpRequestMessage(HttpMethod.Get, $"https://apps.runescape.com/runemetrics/profile/profile?user={userName}&activities=20" );
+        var client = ClientFactory.CreateClient();
+
+        var response = await client.SendAsync(request);
+        if (response.IsSuccessStatusCode)
+        {
+            var jsonResponse = await response.Content.ReadAsStringAsync();
+            profileData = System.Text.Json.JsonSerializer.Deserialize<ProfileData>(jsonResponse);
+        }
+        else{
+            Console.Write("Error fetching profile");
+        }
+     }
+}

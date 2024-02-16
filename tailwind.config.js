@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         helv: ["Helvetica Neue", "sans-serif"],
+        fantasy: ["MedievalSharp", "cursive"],
       },
     },
   },

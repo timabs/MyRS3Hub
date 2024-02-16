@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MyRS3Hub")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+769c8c0ddfaa8be41c691bac1fe006a0c169d92e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9e19c26182be8815d3f9233db51741588ca78e63")]
 [assembly: System.Reflection.AssemblyProductAttribute("MyRS3Hub")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MyRS3Hub")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
