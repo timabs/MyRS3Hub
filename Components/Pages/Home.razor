@@ -6,7 +6,7 @@
 @inject ProfileDataService ProfileDataService
 <PageTitle>Home</PageTitle>
 
-<h1 class="text-center text-5xl p-4  drop-shadow-md">RS3Hub</h1>
+<h1 class="text-center text-5xl p-4  drop-shadow-md" tabindex="0">RS3Hub</h1>
 <div class="flex flex-col place-items-center">
     <form class="flex flex-col place-items-center w-fit gap-4" @onsubmit="HandleSubmit" @onsubmit:preventDefault><label for="rs-name" class="text-2xl ">RuneScape 3 Username:</label>
 <input type="text" class="text-2xl  center w-full border-black border-solid border-2 rounded-md p-2" id="rs-name" title="rs-name" @bind="userName"/>

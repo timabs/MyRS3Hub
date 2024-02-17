@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "E:\\Documents\\1Programs\\MyRS3Hub\\MyRS3Hub\\wwwroot\\chev-left.png",
+      "PackagePath": "staticwebassets\\chev-left.png"
+    },
+    {
       "Id": "E:\\Documents\\1Programs\\MyRS3Hub\\MyRS3Hub\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },

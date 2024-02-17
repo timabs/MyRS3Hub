@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ta67dSnDEtYaZStmcX/unTDNy0oWZZcwMLP5FvNKrAo=",
+  "Hash": "bB8iMUisDltbIbPwjw7NAE/Dff5HjSOWLrZY5Rya008=",
   "Source": "MyRS3Hub",
   "BasePath": "_content/MyRS3Hub",
   "Mode": "Default",
@@ -16,6 +16,25 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "E:\\Documents\\1Programs\\MyRS3Hub\\MyRS3Hub\\wwwroot\\chev-left.png",
+      "SourceId": "MyRS3Hub",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Documents\\1Programs\\MyRS3Hub\\MyRS3Hub\\wwwroot\\",
+      "BasePath": "_content/MyRS3Hub",
+      "RelativePath": "chev-left.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\chev-left.png"
+    },
     {
       "Identity": "E:\\Documents\\1Programs\\MyRS3Hub\\MyRS3Hub\\wwwroot\\favicon.png",
       "SourceId": "MyRS3Hub",
