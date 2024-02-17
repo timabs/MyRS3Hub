@@ -16,6 +16,18 @@ public class SkillValue
     public string? Name { get; set; }
 }
 
+public class Activity
+{
+    [JsonPropertyName("date")]
+    public string? Date { get; set; }
+
+    [JsonPropertyName("details")]
+    public string? Details { get; set; }
+
+    [JsonPropertyName("text")]
+    public string? Text { get; set; }
+}
+
 public class ProfileData
 {
     [JsonPropertyName("name")]
@@ -30,6 +42,9 @@ public class ProfileData
 
     [JsonPropertyName("skillvalues")]
     public List<SkillValue>? SkillValues { get; set; }
+
+    [JsonPropertyName("activities")]
+    public List<Activity>? Activities { get; set; }
 }
 
 public class ProfileDataService
