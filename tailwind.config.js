@@ -7,6 +7,9 @@ module.exports = {
         helv: ["Helvetica Neue", "sans-serif"],
         fantasy: ["MedievalSharp", "cursive"],
       },
+      colors: {
+        "regal-blue": "#2e4464",
+      },
     },
   },
   plugins: [],

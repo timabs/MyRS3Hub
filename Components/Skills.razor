@@ -1,0 +1,39 @@
+@inject ProfileDataService ProfileDataService
+@using System.Text.Json
+@using System.Text.Json.Serialization
+
+
+@if (CurrentProfile != null)
+{
+
+    <div class="w-full border-slate-700 p-2">
+<ul class="list-style-none flex flex-col gap-4">
+@foreach (SkillValue skill in CurrentProfile.SkillValues) {
+    <li class="flex flex-row text-2xl border-2 border-blue-950 rounded-lg p-4">
+        <span class="w-1/3">@skill.Name</span>
+        <span class="w-1/3 text-center">@skill.Level</span>
+        <span class="w-1/3 text-right">@skill.Xp.ToString("N0")</span>
+    </li>
+}
+</ul>
+    </div>
+
+}
+
+@code {
+    private ProfileData? CurrentProfile => ProfileDataService.ProfileData;
+    protected override void OnInitialized()
+    {
+        ProfileDataService.OnProfileDataUpdated += HandleProfileDataUpdated;
+    }
+
+    private void HandleProfileDataUpdated()
+    {
+        StateHasChanged();
+    }
+
+    public void Dispose()
+    {
+        ProfileDataService.OnProfileDataUpdated -= HandleProfileDataUpdated;
+    }
+}
