@@ -47,12 +47,26 @@
 </ul>
     </div>
 }
-
+<div @onclick='() => ToggleAccordion("Quests")'  class="h-20 items-center flex flex-row w-full text-2xl border-b-2 border-x-0 border-black p-4" role="button" @ontouchenter='() => ToggleAccordion("Quests")'>
+    <span>Quests</span>
+    <span class="w-8 h-4 flex"><img src="chev-left.png" class='@GetChevronClass("Quests") w-full transition-all  object-scale-down'></span>
+</div>
+@if (AreQuestsOpen)
+{
+<div class="w-full border-slate-700 p-2">
+    <div class="flex flex-col text-2xl p-2 gap-4">
+        <span>In Progress: @CurrentProfile.QuestsInProgress</span>
+        <span>Complete: @CurrentProfile.QuestsComplete</span>
+        <span>Not Started: @CurrentProfile.QuestsNotStarted</span>
+    </div>
+</div>
+}
 }
 @code {
     private ProfileData? CurrentProfile => ProfileDataService.ProfileData;
     private bool AreSkillsOpen = false;
     private bool AreActivitiesOpen = false;
+    private bool AreQuestsOpen = false;
     private DateTime date;
     protected override void OnInitialized()
     {
@@ -69,6 +83,9 @@
             case "Activities":
                 AreActivitiesOpen = !AreActivitiesOpen;
                 break;
+            case "Quests":
+                AreQuestsOpen = !AreQuestsOpen;
+                break;
         }
     }
 
@@ -80,6 +97,8 @@ private string GetChevronClass(string accordion)
             return AreSkillsOpen ? "-rotate-90" : "rotate-90";
         case "Activities":
             return AreActivitiesOpen ? "-rotate-90" : "rotate-90";
+        case "Quests":
+            return AreQuestsOpen ? "-rotate-90" : "rotate-90";
         default:
             return "rotate-90"; // Default rotation, adjust as needed
     }

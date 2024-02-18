@@ -45,6 +45,15 @@ public class ProfileData
 
     [JsonPropertyName("activities")]
     public List<Activity>? Activities { get; set; }
+
+    [JsonPropertyName("questsstarted")]
+    public int? QuestsInProgress { get; set; }
+
+    [JsonPropertyName("questscomplete")]
+    public int? QuestsComplete { get; set; }
+
+    [JsonPropertyName("questsnotstarted")]
+    public int? QuestsNotStarted { get; set; }
 }
 
 public class ProfileDataService
