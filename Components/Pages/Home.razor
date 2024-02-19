@@ -7,22 +7,23 @@
 <PageTitle>Home</PageTitle>
 
 <h1 class="text-center font-fantasy text-5xl p-4 drop-shadow-md font-bold" tabindex="0">RS3Hub</h1>
-<div class="flex flex-col place-items-center">
+<div class="flex flex-col place-items-center font-poppins">
     <form class="flex flex-col place-items-center w-fit gap-4" @onsubmit="HandleSubmit" @onsubmit:preventDefault><label for="rs-name" class="text-2xl ">RuneScape 3 Username:</label>
 <input type="text" class="text-2xl  center w-full border-black border-solid border-2 rounded-md p-2" id="rs-name" title="rs-name" @bind="userName"/>
 <button type="submit" class="w-fit text-2xl  border-dashed border-2 border-black px-2 py-1  ">Submit</button></form>
 </div>
-<div class="p-4">
+<div class="lg:flex lg:flex-row">
+<div class="p-4 lg:h-full lg:w-1/2 lg:py-4 lg:pl-10 lg:pr-0">
     @if (CurrentProfile != null)
     {
         var formattedTotalXp = CurrentProfile.TotalXp?.ToString("N0");
-        <div class="bg-slate-800 text-white font-fantasy p-6 max-w-sm mx-auto rounded-lg border border-stone-700 shadow-xl">
+        <div class="bg-slate-800 text-white font-fantasy p-6 max-w-sm mx-auto lg:mx-0 rounded-lg border lg:max-w-xl border-stone-700 shadow-xl">
             <div class="flex justify-center">
                 <img src=@CurrentProfile.AvatarUrl alt="Player Profile" class="rounded-full border-2 border-yellow-500 mb-4" />
             </div>
             <h2 class="text-center text-4xl mb-2">@CurrentProfile.Name</h2>
-            <p class="text-center text-lg mb-2">Combat Level: @CurrentProfile.CombatLevel </p>
-            <p class="text-center text-lg">Combat XP: @formattedTotalXp</p>
+            <p class="text-center text-lg mb-2 font-poppins">Combat Level: @CurrentProfile.CombatLevel </p>
+            <p class="text-center text-lg font-poppins">Combat XP: @formattedTotalXp</p>
         </div>
     }
     else
@@ -31,6 +32,7 @@
     }
 </div>
 <Skills />
+</div>
 
 @code {
     private string? userName;

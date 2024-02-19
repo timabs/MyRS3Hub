@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "bB8iMUisDltbIbPwjw7NAE/Dff5HjSOWLrZY5Rya008=",
+  "Hash": "O1gWfxwYyuWbgXM17kz4UvBljxXtr4GzFVq42iwMCXA=",
   "Source": "MyRS3Hub",
   "BasePath": "_content/MyRS3Hub",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.png"
+    },
+    {
+      "Identity": "E:\\Documents\\1Programs\\MyRS3Hub\\MyRS3Hub\\wwwroot\\public\\Coco-Sharp-Light-trial.ttf",
+      "SourceId": "MyRS3Hub",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Documents\\1Programs\\MyRS3Hub\\MyRS3Hub\\wwwroot\\",
+      "BasePath": "_content/MyRS3Hub",
+      "RelativePath": "public/Coco-Sharp-Light-trial.ttf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\public\\Coco-Sharp-Light-trial.ttf"
     },
     {
       "Identity": "E:\\Documents\\1Programs\\MyRS3Hub\\MyRS3Hub\\wwwroot\\site.css",

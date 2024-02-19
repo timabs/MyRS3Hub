@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
+      "Id": "E:\\Documents\\1Programs\\MyRS3Hub\\MyRS3Hub\\wwwroot\\public\\Coco-Sharp-Light-trial.ttf",
+      "PackagePath": "staticwebassets\\public\\Coco-Sharp-Light-trial.ttf"
+    },
+    {
       "Id": "E:\\Documents\\1Programs\\MyRS3Hub\\MyRS3Hub\\wwwroot\\site.css",
       "PackagePath": "staticwebassets\\site.css"
     },
