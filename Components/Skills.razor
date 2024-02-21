@@ -3,15 +3,15 @@
 @using System.Text.Json.Serialization
 
 @if (CurrentProfile != null) {
-    <div class="lg:w-1/2 lg:py-4 lg:flex lg:flex-col lg:justify-center">
+    <div class="lg:w-1/2 lg:pt-9 xl:pt-3 lg:flex lg:flex-col lg:h-4/5 lg:min-h-96 lg:justify-center transition-all">
 <div @onclick='() => ToggleAccordion("Skills")'  class="h-20 items-center flex flex-row w-full text-2xl border-y-2 border-x-0 border-black p-4" role="button" @ontouchenter='() => ToggleAccordion("Skills")'>
-    <span class="font-poppins font-bold">Skills</span>
+    <span class="font-poppins font-bold 2xl:text-4xl">Skills</span>
     <span class="w-8 h-4 flex"><img src="chev-left.png" class='@GetChevronClass("Skills") w-full transition-all  object-scale-down'></span>
 </div>
 @if (AreSkillsOpen)
 {
 
-    <div class="w-full border-slate-700 p-2 font-poppins">
+    <div class="w-full border-slate-700 p-2 font-poppins overflow-y-scroll">
 <ul class="list-style-none flex flex-col gap-4">
 @foreach (SkillValue skill in CurrentProfile.SkillValues) {
     <li class="flex flex-row text-xl border-b-2 border-black p-4">
@@ -25,12 +25,12 @@
 
 }
 <div @onclick='() => ToggleAccordion("Activities")'  class="h-20 items-center flex flex-row w-full text-2xl border-b-2 border-x-0 border-black p-4" role="button" @ontouchenter='() => ToggleAccordion("Activities")'>
-    <span class="font-poppins font-bold">Activities</span>
+    <span class="font-poppins font-bold 2xl:text-4xl">Activities</span>
     <span class="w-8 h-4 flex"><img src="chev-left.png" class='@GetChevronClass("Activities") w-full transition-all  object-scale-down'></span>
 </div>
 @if (AreActivitiesOpen)
 {
-    <div class="w-full border-slate-700 p-2 font-poppins">
+    <div class="w-full border-slate-700 p-2 font-poppins overflow-y-scroll">
 <ul class="list-style-none flex flex-col gap-4">
 @foreach (Activity activity in CurrentProfile.Activities) {
     <li class="flex flex-col text-lg p-2 gap-4">
@@ -50,12 +50,12 @@
     </div>
 }
 <div @onclick='() => ToggleAccordion("Quests")'  class="h-20 items-center flex flex-row w-full text-2xl border-b-2 border-x-0 border-black p-4" role="button" @ontouchenter='() => ToggleAccordion("Quests")'>
-    <span class="font-poppins font-bold">Quests</span>
+    <span class="font-poppins font-bold 2xl:text-4xl">Quests</span>
     <span class="w-8 h-4 flex"><img src="chev-left.png" class='@GetChevronClass("Quests") w-full transition-all  object-scale-down'></span>
 </div>
 @if (AreQuestsOpen)
 {
-<div class="w-full border-slate-700 p-2 font-poppins">
+<div class="w-full border-slate-700 p-2 font-poppins overflow-y-scroll">
     <div class="flex flex-col text-2xl p-2 gap-4">
         <span>In Progress: @CurrentProfile.QuestsInProgress</span>
         <span>Complete: @CurrentProfile.QuestsComplete</span>
