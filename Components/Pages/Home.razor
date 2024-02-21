@@ -6,11 +6,11 @@
 @inject ProfileDataService ProfileDataService
 <PageTitle>Home</PageTitle>
 
-<h1 class="text-center font-fantasy text-5xl p-4 drop-shadow-md font-bold" tabindex="0">RS3Hub</h1>
-<div class="flex flex-col place-items-center font-poppins">
-    <form class="flex flex-col place-items-center w-fit gap-4" @onsubmit="HandleSubmit" @onsubmit:preventDefault><label for="rs-name" class="text-2xl ">RuneScape 3 Username:</label>
-<input type="text" class="text-2xl  center w-full border-black border-solid border-2 rounded-md p-2" id="rs-name" title="rs-name" @bind="userName"/>
-<button type="submit" class="w-fit text-2xl  border-dashed border-2 border-black px-2 py-1  ">Submit</button></form>
+<h1 class="text-center font-fantasy text-5xl p-4 drop-shadow-md font-bold 2xl:text-8xl" tabindex="0">RS3Hub</h1>
+<div class="flex flex-col place-items-center font-poppins ">
+    <form class="2xl:text-3xl flex flex-col place-items-center w-fit gap-4" @onsubmit="HandleSubmit" @onsubmit:preventDefault><label for="rs-name" class="2xl:text-3xl  text-2xl ">RuneScape 3 Username:</label>
+<input type="text" class="2xl:text-3xl text-2xl  center w-full border-black border-solid border-2 rounded-md p-2" id="rs-name" title="rs-name" @bind="userName"/>
+<button type="submit" class="2xl:text-3xl w-fit text-2xl  border-dashed border-2 border-black px-2 py-1  ">Submit</button></form>
 </div>
 <div class="lg:flex lg:flex-row lg:h-4/6 lg:justify-center">
 <div class="p-4 lg:h-full lg:w-1/2 lg:py-4 lg:pl-10 lg:pr-0">
